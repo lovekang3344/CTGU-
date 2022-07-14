@@ -8,11 +8,11 @@ from email.utils import formataddr
 
 session = requests.session()
 session.keep_alive = False
-database = 'db19b5629c90ac4e7a9243475eca406185auto_report'  # 数据库
-username = 'auto_report'    # 数据库用户名
-password = 'Sb123456'       # 数据库密码
-host = '139.196.89.94'      # 数据库地址
-port = '5433'               # 数据库端口
+database = 'XXXX'  # 数据库
+username = 'XXXXX'    # 数据库用户名
+password = 'XXXX'       # 数据库密码
+host = 'XXXX'      # 数据库地址
+port = 'XXXX'               # 数据库端口
 proxies = {
     "http": "http://123.56.175.31:3128",
     "https": "http://123.56.175.31:3128"
@@ -22,8 +22,8 @@ headers: dict[str, str] = {
     "User-Agent": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2224.3 Safari/537.36",
     "Referer": "http://yiqing.ctgu.edu.cn/wx/index/login.do?currSchool=ctgu&CURRENT_YEAR=2019&showWjdc=false&studentShowWjdc=false"
 }
-my_sender = '2494341964@qq.com'  # 发件人邮箱账号
-my_pass = 'dbuxvtibvyayebfh'  # 发件人邮箱密码(当时申请smtp给的口令)
+my_sender = 'XXXXXX'  # 发件人邮箱账号
+my_pass = 'XXXXXX'  # 发件人邮箱密码(当时申请smtp给的口令)
 
 #发送QQ邮箱
 def send_qq_email(email, content):
